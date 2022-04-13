@@ -9,10 +9,10 @@ public class SimpleArray {
         znajomi[3] = "Andrzej";
         znajomi[4] = "Marta";
 
+        int numberOfElements = znajomi.length;
+        System.out.println("Moja tabl zawiera el:" + numberOfElements);
 
 
-        int numbeOfElements = znajomi.length;
-        System.out.println("Moja tablica zawiera 5 elementów" );
 
 
     }
