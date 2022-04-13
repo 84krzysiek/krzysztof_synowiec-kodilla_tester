@@ -1,4 +1,4 @@
-package FirstClass;
+package Helloworld.FirstClass;
 
 public class HellofrimFirstClass {
     public static void main(String[] args) {

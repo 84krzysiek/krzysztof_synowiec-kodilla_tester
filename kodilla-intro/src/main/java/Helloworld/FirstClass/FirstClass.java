@@ -1,4 +1,4 @@
-package FirstClass;
+package Helloworld.FirstClass;
 
 public class FirstClass {    // [1]
     public static void main(String[] args) {         // [2]
