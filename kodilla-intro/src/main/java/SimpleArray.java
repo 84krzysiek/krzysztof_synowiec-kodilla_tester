@@ -1,5 +1,3 @@
-package SimpleArray;
-
 public class SimpleArray {
     public static void main(String[] args) {
         String[] znajomi = new String[5];

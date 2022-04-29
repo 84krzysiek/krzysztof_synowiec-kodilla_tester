@@ -1,5 +1,3 @@
-package Loops;//petla for
-
 public class Loops  {
     public static void main(String[] args) {
         String[] names = new String[] {"Zygfryd", "Gwidon", "Florentyna"};
