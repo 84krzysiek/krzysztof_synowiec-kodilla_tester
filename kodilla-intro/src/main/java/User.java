@@ -2,20 +2,23 @@
 public class User {
     int age;
     String name;
+    int high;
 
-    private User(String name, int age) {
+    private User(String name, int age,int high) {
         this.name = name;
         this.age = age;
+        this.high = high;
     }
 
-    public int getAge(int age) {
+    private int getAge(int age) {
         return age;
     }
-
-    public String getName(String name) {
+    private String getName(String name) {
         return name;
     }
-
+    private String high(String high) {
+        return name;
+    }
     public static void main(String[] args) {
         User anna = new User("Anna", 20);
         User betty = new User("Betty", 33);
@@ -28,14 +31,10 @@ public class User {
         int result = 0;
         for (int i = 0; i < users.length; i++) {
             result = result + users[i].age;
-
         }
-
-
         double averageUsers = 0;
         for (double i = 0; i < users.length; i++) {
             averageUsers = result / users.length;
-
         }
         double averageBelow = averageUsers;
                 for(double i =0; i < users.length ; i++){
@@ -43,11 +42,8 @@ public class User {
                 }
                     System.out.println(averageBelow);
                 if (result > averageUsers) {
-            System.out.println("theya're above average ");
-
-
-        }
-
+            System.out.println("theya're under average ");
+                }
     }
 }
 

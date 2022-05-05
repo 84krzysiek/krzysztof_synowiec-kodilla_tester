@@ -1,3 +1,14 @@
+class Subject {
+    public String name;
+    public double age;
+    public double height;
+
+    public Subject(String name, double age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+}
 public class Application {
 
     public static void main(String[] args) {
@@ -14,3 +25,6 @@ public class Application {
         }
     }
 }
+
+
+
