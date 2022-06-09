@@ -8,14 +8,7 @@ class Subject {
         this.age = age;
         this.height = height;
     }
-}
-public class Application {
-
-    public static void main(String[] args) {
-        String name = "Adam";
-        double age = 40.5;
-        double height = 178;
-
+    public void vaidateUser() {
         if (name != null) {
             if (age > 30 && height > 160) {
                 System.out.println("User is older than 30 and taller than 160cm");
@@ -24,7 +17,17 @@ public class Application {
             }
         }
     }
+
+    public static void main(String[] args) {
+        Subject subject = new Subject("test", 30, 168);
+        subject.vaidateUser();
+
+    }
+
+
 }
+
+
 
 
 

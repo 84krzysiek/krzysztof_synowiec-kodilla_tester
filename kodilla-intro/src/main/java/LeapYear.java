@@ -1,7 +1,7 @@
 public class LeapYear {
 
     public static void main(String[] args) {
-        int rok = 2022;
+        int rok = 2024;
         System.out.println(rok);
         boolean rokPrzestepny;
         if (rok % 4 == 0) {

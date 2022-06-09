@@ -3,7 +3,7 @@ public class Calculator {
     static int counter = 0;// dodane nowe pole w linii
 
     public Calculator() {
-        counter++;//instruct zwiękaszająca wartość tego pola podczas tworzenia obiektu
+         counter++;//instruct zwiękaszająca wartość tego pola podczas tworzenia obiektu
     }
 
     public double add(double a, double b) {
@@ -21,12 +21,7 @@ public class Calculator {
     }
 
     public double circlePerimeter(double r) {
-        return 2 * PI *r;
+        return 2 * PI * r;
     }
-
-
-
-
-
-
 }
+
