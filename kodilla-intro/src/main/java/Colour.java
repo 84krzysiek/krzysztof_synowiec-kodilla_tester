@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Colour {
+
     public static String getColour() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -9,6 +10,7 @@ public class Colour {
             switch (colour) {
                 case "R":
                     return "red";
+
                 case "B":
                     return "blue";
                 case "G":
@@ -23,7 +25,6 @@ public class Colour {
     }
 
     public static void main(String[] args) {
-        Colour colourSelect = new Colour();
         String result = Colour.getColour();
         System.out.println("result:" + result);
 

@@ -12,7 +12,7 @@ public class Book {
     }
 
     public static void main(String[] args) {
-        Book book = new Book("Isaac Asimov", "The Galaxy");//obiekt book
+        Book book = Book.of("Isaac Asimov", "The Galaxy");//obiekt book
         System.out.println(book.author+ " " + book.title);//wyswietla utworzony obiekt
 
 
