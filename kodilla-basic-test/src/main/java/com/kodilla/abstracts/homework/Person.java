@@ -2,12 +2,15 @@ package com.kodilla.abstracts.homework;
 
 public class Person {
     public String firstName;
-    public String job;
+    public Job Job;
     public int age;
 
-    public Person(String firstName, String job, int age) {
+
+
+
+    public Person(String firstName, Job Job , int age) {
         this.firstName = firstName;
-        this.job = job;
+        this.Job = Job;
         this.age = age;
     }
 

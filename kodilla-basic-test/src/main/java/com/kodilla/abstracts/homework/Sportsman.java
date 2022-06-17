@@ -4,6 +4,8 @@ public class Sportsman extends Job {
 
 
 
+
+
     @Override
     public void getSalary() {
         System.out.println("Sportsman salary is : " + 1500 );
