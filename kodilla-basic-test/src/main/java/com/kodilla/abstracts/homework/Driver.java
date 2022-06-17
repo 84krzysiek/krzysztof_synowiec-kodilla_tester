@@ -3,7 +3,6 @@ package com.kodilla.abstracts.homework;
 public class Driver extends Job {
 
 
-
     @Override
     public void getSalary() {
         System.out.println("Driver salary is :" + 2500);

@@ -4,11 +4,10 @@ public class Person {
     public String firstName;
     public Job Job;
     public int age;
+    private int number;
 
 
-
-
-    public Person(String firstName, Job Job , int age) {
+    public Person(String firstName, Job Job, int age) {
         this.firstName = firstName;
         this.Job = Job;
         this.age = age;
