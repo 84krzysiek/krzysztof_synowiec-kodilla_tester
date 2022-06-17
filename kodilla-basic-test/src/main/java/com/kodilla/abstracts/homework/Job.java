@@ -7,6 +7,8 @@ public abstract class Job {
 
 
 
+
+
     public  void getSalary(){
      System.out.println();
  }

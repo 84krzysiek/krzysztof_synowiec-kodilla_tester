@@ -4,7 +4,6 @@ public class Person {
     public String firstName;
     public Job Job;
     public int age;
-    private int number;
 
 
     public Person(String firstName, Job Job, int age) {
@@ -13,12 +12,16 @@ public class Person {
         this.age = age;
     }
 
+
     public static void main(String[] args) {
+
+
 
 
         Driver driver = new Driver();
         driver.getSalary();
         driver.getResponsibilities();
+
 
         Sportsman sportsman = new Sportsman();
         sportsman.getSalary();
