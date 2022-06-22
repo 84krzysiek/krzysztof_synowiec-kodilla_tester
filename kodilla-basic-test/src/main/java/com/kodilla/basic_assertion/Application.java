@@ -9,13 +9,14 @@ public class Application {
         int sumResult = calculator.sum(a, b);
         int ResultSubstract = calculator.substract(a, b);
         int square = calculator.square(a);
+
         boolean correct = ResultChecker.AssertEquals(19, sumResult);
         if (correct) {
             System.out.println("Metoda sum działa poprawnie " +  a  + " i " +  b );
         } else {
             System.out.print("Metpda sum nie dziąła poprawnie  " + a + " i " +  b);
         }
-        boolean noCorrect = ResultChecker.AssertEquals(6, ResultSubstract);
+        boolean noCorrect = ResultChecker.AssertEquals(5, ResultSubstract);
         if (noCorrect) {
             System.out.println("Metoda substract działa poprawnie" + a + " i " + b);
         } else {
