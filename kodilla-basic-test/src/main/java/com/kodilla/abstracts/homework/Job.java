@@ -5,18 +5,16 @@ public abstract class Job {
     private String responsibilities;
 
 
+    public void getSalary() {
+        return;
+
+    }
+
+    public void getResponsibilities() {
+    }
 
 
-
-
-    public  void getSalary(){
-     System.out.println();
- }
-
- public  void getResponsibilities(){
-
- }
- }
+}
 
 
 

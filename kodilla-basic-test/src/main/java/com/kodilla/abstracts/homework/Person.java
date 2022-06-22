@@ -2,20 +2,18 @@ package com.kodilla.abstracts.homework;
 
 public class Person {
     public String firstName;
-    public Job Job;
+    public String job;
     public int age;
 
 
-    public Person(String firstName, Job Job, int age) {
+    public Person(String firstName, String job, int age) {
         this.firstName = firstName;
-        this.Job = Job;
+        this.job = job;
         this.age = age;
+
     }
 
-
     public static void main(String[] args) {
-
-
 
 
         Driver driver = new Driver();
