@@ -1,4 +1,4 @@
-package com.kodilla.abstracts;
+package com.kodilla.abstracts.homework.Animal;
 
 public class AnimalProcessor {
     public void process(Animal animal) {

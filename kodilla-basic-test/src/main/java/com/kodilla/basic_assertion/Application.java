@@ -9,6 +9,7 @@ public class Application {
         int sumResult = calculator.sum(a, b);
         int ResultSubstract = calculator.substract(a, b);
         int square = calculator.square(a);
+        int divide =calculator.divide(a,b);
 
         boolean correct = ResultChecker.AssertEquals(19, sumResult);
         if (correct) {
@@ -27,6 +28,12 @@ public class Application {
             System.out.print("Metoda podnoszenia do kwadratu działa poprawnie "  +  a  +  "  ");
         } else {
             System.out.println("Metoda podnoszenia do kwadratu nie działa poprawnie");
+        }
+        boolean correctDivide = ResultChecker.AssertEquals(100, divide);
+        if(correctDivide){
+            System.out.println("metoda dzielenia działa poprawnie " +  a + "" + b);
+        }else {
+            System.out.println("metoda dzielenia dnie działa poprawnie " + a + "" + b);
         }
     }
 }

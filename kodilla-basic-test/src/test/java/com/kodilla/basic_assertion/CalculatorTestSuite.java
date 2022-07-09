@@ -26,13 +26,11 @@ public class CalculatorTestSuite {
     }
 
     @Test
-    public void testSquare() {
+    public void testSqr() {
         Calculator calcSquare = new Calculator();
-        double a = 5;
-        double b = 5;
-        double d = 2;
-        double SquareResult = calcSquare.doubleSquare (a,b, d);
-        assertEquals(11, SquareResult, 1);
+        int a = 4;
+        double SquareResult = calcSquare.square(a);
+        assertEquals(16, SquareResult, 0.001);
     }
 
 
