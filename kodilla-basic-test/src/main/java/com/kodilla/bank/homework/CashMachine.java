@@ -21,7 +21,7 @@ public class CashMachine {
         return saldo;
     }
 
-    public int calculateSaldoMinus() {//metoda która liczy saldo po wypłacie
+    public int calculateSaldoMinus(int saldoOut) {//metoda która liczy saldo po wypłacie
         int saldoMinus = 0;
         for (int operation : operations) {
             if (operation < 0) {
@@ -31,7 +31,7 @@ public class CashMachine {
         return saldoMinus * -1;
     }
 
-    public int CalculateSaldoPlus() {
+    public int CalculateSaldoPlus(int saldoIn) {
         int saldoPlus = 0;
         for (int operation : operations) {
             if (operation > 0) {
@@ -61,6 +61,7 @@ public class CashMachine {
         }
         return countTransactionMinus;
     }
+
 }
 
 
