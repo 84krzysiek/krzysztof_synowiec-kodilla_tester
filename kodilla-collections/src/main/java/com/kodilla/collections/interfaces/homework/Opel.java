@@ -1,34 +1,31 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class Opel implements Car{
-    private int oprlSpeed;
+public class Opel implements Car {
+    private int speed;
 
-    public Opel(int opelSpeed){
-        this.oprlSpeed = opelSpeed;
+    public Opel(int speed){
+        this.speed = speed;
     }
+
     @Override
     public int getSpeed() {
-        return oprlSpeed;
+        return speed;
     }
 
     @Override
-    public int increaseSpeed() {
-        int inceraseSpeed = 5;
-        for( int i= 0 ; i < oprlSpeed; i++){
-            inceraseSpeed++;
+    public void increaseSpeed() {
+        int increaseOpelSpeed;
+        increaseOpelSpeed = speed +70;
+        increaseOpelSpeed++;
 
-
-        }
-        return inceraseSpeed;
     }
 
     @Override
-    public int decreaseSpeed() {
-        int decreaseSpeed = oprlSpeed;
-        for (int i = 0; i < decreaseSpeed; i++) {
+    public void decreaseSpeed() {
+        int decreaseOpelSpeed = 0;
+        decreaseOpelSpeed = speed -20;
+        decreaseOpelSpeed--;
 
-            decreaseSpeed--;
-        }
-        return decreaseSpeed;
+
     }
 }

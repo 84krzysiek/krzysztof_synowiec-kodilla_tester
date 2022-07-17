@@ -1,35 +1,28 @@
 package com.kodilla.collections.interfaces.homework;
 
 public class Audi implements Car {
-    private int audiSpeed;
+    private int speed;
 
-    public Audi(int audiSpeed) {
-        this.audiSpeed = audiSpeed;
+    public  Audi(int speed){
+        this.speed = speed;
     }
-
     @Override
     public int getSpeed() {
-        return audiSpeed;
+        return speed;
     }
 
     @Override
-    public int increaseSpeed() {
-        int inceraseSpeed = 5;
-        for (int i = 0; i < audiSpeed; i++) {
-            inceraseSpeed++;
-
-
-        }
-        return inceraseSpeed;
+    public void increaseSpeed() {
+        int increaseAudiSpeed;
+        increaseAudiSpeed= speed + 60;
+        increaseAudiSpeed ++;
     }
 
     @Override
-    public int decreaseSpeed() {
-        int decreaseSpeed = audiSpeed;
-        for (int i = 0; i < decreaseSpeed; i++) {
+    public void decreaseSpeed() {
+        int decreaseAudiSpeed = 0;
+        decreaseAudiSpeed = speed -40;
+        decreaseAudiSpeed--;
 
-            decreaseSpeed--;
-        }
-        return decreaseSpeed;
     }
 }
