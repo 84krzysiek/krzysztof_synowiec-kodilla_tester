@@ -7,7 +7,7 @@ public class Bank {
 
     public Bank() {//tablica z bankomatami
         this.size = 0;
-        this.atmIndex = new CashMachine[3];
+        this.atmIndex = new CashMachine[0];
 
     }
 
@@ -19,7 +19,7 @@ public class Bank {
         this.atmIndex = newTab;
     }
 
-    public int getNumberOfMachines(){
+    public int getNumberOfMachines() {
         return size;
     }
 
@@ -34,39 +34,60 @@ public class Bank {
 
     }
 
-    public int cashOutAllAtm() {//transakcje związane z wypłatą
+    public double cashOutAllAtm() {//transakcje związane z wypłatą
         int transaction = 0;
         for (CashMachine machine : atmIndex) {
-            transaction += machine.calculateSaldoMinus(100);
+            transaction += machine.calculateSaldoMinus();
+        }
+        return transaction;
+    }
+    public double cashInAllAtm() {//transakcje związane z wypłatą
+        int transaction = 0;
+        for (CashMachine machine : atmIndex) {
+            transaction += machine.calculateSaldoPlus();
         }
         return transaction;
     }
 
 
 
-    public int cashInAllAtm() {
-        int transaction = 0;
+    public double cashOutTransaction() {//liczba trans wypłata
+        int outTransaction = 0;
         for (CashMachine machine : atmIndex) {
-            transaction += machine.CalculateSaldoPlus(1000);
+            outTransaction += machine.transactionCountMinus();
         }
-        return transaction;
+        return outTransaction;
     }
 
-    public int averageCashOut() {
-        int averageOut = 0;
-        for (CashMachine machine : atmIndex) {
-            averageOut = machine.calculateSaldo() + machine.transactionCount()/machine.transactionCountMinus();
+    public double cashInTransactions() {
+        int inTransaction = 0;
+        for(CashMachine machine : atmIndex) {
+
+            inTransaction +=machine.transactionCount();
         }
-        return averageOut;
+        return inTransaction;
     }
 
-    public int averageCashIn() {
-        int averageIn = 50;
+    public double averageCashOut() {//śr wypłąta
+
+        return cashOutAllAtm() / cashOutTransaction();
+    }
+
+    public double averageCashIn() {//śr wpłata
+        double averageIn = 0;
         for (CashMachine machine : atmIndex) {
-            averageIn = machine.calculateSaldo() / machine.transactionCount();
+            averageIn = machine.calculateSaldoPlus() / machine.transactionCount();
         }
         return averageIn;
     }
+
+    public double averageCashInNew() {
+        return cashInAllAtm()/cashInTransactions();
+    }
+
+
+
+
 
 }
 

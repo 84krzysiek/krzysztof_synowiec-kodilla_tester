@@ -4,6 +4,7 @@ public class CarRace {
 
     public static void main(String[] args) {
         Ford ford = new Ford(100);
+
         doRace(ford);
 
         Audi audi = new Audi(140);
@@ -17,9 +18,15 @@ public class CarRace {
 
 
     private static void doRace(Car car) {
-        System.out.println(car.getSpeed());
+
+
+        car.increaseSpeed();
+        car.increaseSpeed();
         car.increaseSpeed();
         car.decreaseSpeed();
+        car.decreaseSpeed();
+        System.out.println(car.getClass().getSimpleName() + " " + car.getSpeed() );
+
 
     }
 }

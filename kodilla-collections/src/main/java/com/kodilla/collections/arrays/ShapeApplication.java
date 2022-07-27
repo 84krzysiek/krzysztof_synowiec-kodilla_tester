@@ -21,8 +21,8 @@ public class ShapeApplication {
         Random random = new Random();
         int drawnShapeKind = random.nextInt(3);
         //double a = random.nextDouble() * 100 + 1;
-        // double b = random.nextDouble() * 100 + 1;
-        // double c = random.nextDouble() * 100 + 1;
+         //double b = random.nextDouble() * 100 + 1;
+         //double c = random.nextDouble() * 100 + 1;
 
         double a = getRandomSize(random);
         if (drawnShapeKind == 0)

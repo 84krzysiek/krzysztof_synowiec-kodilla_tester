@@ -7,6 +7,7 @@ public class Opel implements Car {
         this.speed = speed;
     }
 
+
     @Override
     public int getSpeed() {
         return speed;
@@ -14,17 +15,16 @@ public class Opel implements Car {
 
     @Override
     public void increaseSpeed() {
-        int increaseOpelSpeed;
-        increaseOpelSpeed = speed +70;
-        increaseOpelSpeed++;
+
+        speed =speed +40;
+
 
     }
 
     @Override
     public void decreaseSpeed() {
-        int decreaseOpelSpeed = 0;
-        decreaseOpelSpeed = speed -20;
-        decreaseOpelSpeed--;
+
+        speed =speed -20;
 
 
     }

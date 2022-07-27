@@ -4,6 +4,12 @@ public class CashMachine {
     private int[] operations;
     private int size;
 
+    public  CashMachine() {
+        this.size = 0;
+        this.operations = new int[0];
+    }
+
+
 
     public void addTransactions(int transaction) {//zrealizowane transakcje
         this.size++;
@@ -21,7 +27,7 @@ public class CashMachine {
         return saldo;
     }
 
-    public int calculateSaldoMinus(int saldoOut) {//metoda która liczy saldo po wypłacie
+    public int calculateSaldoMinus() {//metoda która liczy saldo po wypłacie
         int saldoMinus = 0;
         for (int operation : operations) {
             if (operation < 0) {
@@ -31,7 +37,7 @@ public class CashMachine {
         return saldoMinus * -1;
     }
 
-    public int CalculateSaldoPlus(int saldoIn) {
+    public int calculateSaldoPlus() {
         int saldoPlus = 0;
         for (int operation : operations) {
             if (operation > 0) {
@@ -52,6 +58,8 @@ public class CashMachine {
         return countTransaction;
     }
 
+
+
     public int transactionCountMinus() {//metoda zwracająca liczbę transakcji
         int countTransactionMinus = 0;
         for (int transaction1 : operations) {
@@ -60,6 +68,14 @@ public class CashMachine {
             }
         }
         return countTransactionMinus;
+    }
+
+    public int getAverage(){
+        int sum = 0;
+        for ( int i = 0 ; i < this.operations.length; i++){
+            sum+= this.operations[i];
+        }
+        return sum/this.operations.length;
     }
 
 }
